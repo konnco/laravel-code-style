@@ -4,7 +4,6 @@
 Maybe many of the new kids who applied at Konnco Studio are a little confused about how to write laravel code at Konnco Studio, so please read this document carefully.
 
 ## Coding Style
-
 ### Variables
 Always use camel case to write variables
 ```php
@@ -36,3 +35,7 @@ Always use the import class, to make it easier for the IDE to identify files, an
 Route::resource('payment', OrderApiController::class]);
 Route::get('payment', [OrderApiController::class, 'index']);
 ```
+
+### Etc
+#### Try to avoid unnecessary nesting by returning a value early
+![Return Early](https://pbs.twimg.com/media/EanzmPwXYAAoH2A.jpg?name=large "Return Early")
